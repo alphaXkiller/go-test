@@ -8,7 +8,7 @@ import (
 	"net/http"
 	"testing"
 
-	"rr/research-tool"
+	"rr/research-tool/config"
 )
 
 type ResBody struct {
@@ -16,7 +16,7 @@ type ResBody struct {
 }
 
 func TestIndexRoute(t *testing.T) {
-	app := main.App{}
+	app := config.App{}
 	app.Initialize()
 
 	r := gofight.New()
